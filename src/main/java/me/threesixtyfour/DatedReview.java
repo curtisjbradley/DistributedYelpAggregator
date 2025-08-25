@@ -1,7 +1,6 @@
 package me.threesixtyfour;
 
 import org.apache.hadoop.io.WritableComparable;
-import org.apache.hadoop.mapred.MapTask;
 
 import java.io.DataInput;
 import java.io.DataOutput;
