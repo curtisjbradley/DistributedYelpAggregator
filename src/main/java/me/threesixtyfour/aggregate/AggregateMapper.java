@@ -1,4 +1,4 @@
-package me.threesixtyfour;
+package me.threesixtyfour.aggregate;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
@@ -9,7 +9,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class ReviewMapper extends Mapper<Object, Text, DatedReview, IntWritable> {
+public class AggregateMapper extends Mapper<Object, Text, DatedReview, IntWritable> {
     private final static IntWritable one = new IntWritable(1);
 
     private final static Gson GSON = new Gson();

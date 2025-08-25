@@ -1,4 +1,4 @@
-package me.threesixtyfour;
+package me.threesixtyfour.aggregate;
 
 import org.apache.hadoop.io.WritableComparable;
 
@@ -36,7 +36,7 @@ public class DatedReview implements WritableComparable<DatedReview> {
 
     @Override
     public String toString() {
-        return "DatedReview [year=" + year + ", month=" + month + ", stars=" + stars + "]";
+        return year + "-" + month + "-" + stars;
     }
 
     @Override

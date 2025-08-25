@@ -1,11 +1,11 @@
-package me.threesixtyfour;
+package me.threesixtyfour.aggregate;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
 
-public class ReviewReducer extends Reducer<DatedReview, IntWritable, DatedReview, IntWritable> {
+public class AggregateReducer extends Reducer<DatedReview, IntWritable, DatedReview, IntWritable> {
     private IntWritable result = new IntWritable();
 
     public void reduce(DatedReview key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
