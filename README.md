@@ -4,6 +4,8 @@ This project here uses hadoop to aggregate data from the public [yelp reviews da
 
 It takes in the dataset and outputs the total number of reviews by star, month, and year.
 
+Video of the code being [run in a simulated environment](https://www.youtube.com/watch?v=5ZB8owYhZzw).
+
 ---
 ## Summarized Output
 
